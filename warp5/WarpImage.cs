@@ -6,8 +6,8 @@ namespace warp5
 {
     class WarpImage<T>
     {
-        private Coord RA;       // object RA (Right Ascention)
-        private Coord DEC;      //object Dec (declination)
+        private Coord ra;       // object RA (Right Ascention)
+        private Coord dec;      //object Dec (declination)
         private DTYPE idType;
         private uint width;     //image width
         private uint height;    //image height
@@ -15,11 +15,11 @@ namespace warp5
         private string notes;   //fits notes
         private T[,] data;      //image data
         
-
+        //create an empty warp image 
         public WarpImage()
         {
-            RA = new Coord();
-            DEC = new Coord();
+            ra = new Coord();
+            dec = new Coord();
             width = 0;
             height = 0;
             oName = "";
@@ -42,12 +42,7 @@ namespace warp5
         //create a WarpImage of type DTYPE 
         public WarpImage(uint uWidth, uint uHeight, DTYPE uType)
         {
-            RA = new Coord();
-            DEC = new Coord();
-            width = uWidth;
-            height = uHeight;
-            oName = "";
-            notes = "";
+           
             switch(uType)
             {
                 case DTYPE.DOUBLE:
@@ -91,14 +86,20 @@ namespace warp5
                         break;
                     }
             }
+            ra = new Coord();
+            dec = new Coord();
+            width = uWidth;
+            height = uHeight;
+            oName = "";
+            notes = "";
             idType = uType;
             data = new T[width, height];
         }
         //create a warp image without specifying dtype
         public WarpImage(uint uWidth, uint uHeight)
         {
-            RA = new Coord();
-            DEC = new Coord();
+            ra = new Coord();
+            dec = new Coord();
             width = uWidth;
             height = uHeight;
             oName = "";
@@ -118,5 +119,99 @@ namespace warp5
 
             data = new T[width,height];      
         }
+        //specify all fields of a complete warp image
+        public WarpImage(uint uWidth, uint uHeight, DTYPE uType,string uOname, string uNotes, Coord uRA, Coord uDEC)
+        {
+          
+          
+            switch (uType)
+            {
+                case DTYPE.DOUBLE:
+                    {
+                        if (typeof(T) != typeof(double))
+                        {
+                            throw new InvalidOperationException("Invlid Image Data type, expected " + typeof(double) + " got " + typeof(T));
+                        }
+                        break;
+                    }
+                case DTYPE.FLOAT:
+                    {
+                        if (typeof(T) != typeof(float))
+                        {
+                            throw new InvalidOperationException("Invlid Image Data type, expected " + typeof(float) + " got " + typeof(T));
+                        }
+                        break;
+                    }
+                case DTYPE.BYTE:
+                    {
+                        if (typeof(T) != typeof(byte))
+                        {
+                            throw new InvalidOperationException("Invlid Image Data type, expected " + typeof(byte) + " got " + typeof(T));
+                        }
+                        break;
+                    }
+                case DTYPE.INT16:
+                    {
+                        if (typeof(T) != typeof(ushort))
+                        {
+                            throw new InvalidOperationException("Invlid Image Data type, expected " + typeof(ushort) + " got " + typeof(T));
+                        }
+                        break;
+                    }
+                case DTYPE.INT32:
+                    {
+                        if (typeof(T) != typeof(uint))
+                        {
+                            throw new InvalidOperationException("Invlid Image Data type, expected " + typeof(uint) + " got " + typeof(T));
+                        }
+                        break;
+                    }
+            }
+            width = uWidth;
+            height = uHeight;
+            idType = uType;
+            oName = uOname;
+            notes = uNotes;
+            ra = uRA;
+            dec = uDEC;
+            data = new T[width, height];
+        }
+        public Coord Ra
+        {
+            get
+            {
+                return ra;
+            }
+            set
+            {
+                ra = value;
+            }
+        }
+        public Coord Dec
+        {
+            get
+            {
+                return dec;
+            }
+            set
+            {
+                dec = value;
+            }
+        }
+        public uint Width
+        {
+            get
+            {
+                return width;
+            }
+        }
+        public uint Height
+        {
+            get
+            {
+                return height;
+            }
+        }
+
     }
 }
