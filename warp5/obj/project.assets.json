@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp\\warp5\\warp5\\warp5.csproj",
+      "projectUniqueName": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp5\\warp5\\warp5.csproj",
       "projectName": "warp5",
-      "projectPath": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp\\warp5\\warp5\\warp5.csproj",
+      "projectPath": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp5\\warp5\\warp5.csproj",
       "packagesPath": "C:\\Users\\aws4y\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp\\warp5\\warp5\\obj\\",
+      "outputPath": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp5\\warp5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

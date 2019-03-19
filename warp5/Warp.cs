@@ -11,9 +11,9 @@ namespace warp5
         INT32=32
 
     }
-    public class Warp<T>
+    public class Warp
     {
-        WarpImage<T>[] stack;
+        WarpImage<ushort>[] stack;
 
     }
 }
