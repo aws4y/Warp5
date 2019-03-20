@@ -93,7 +93,7 @@ namespace warp5
             oName = "";
             notes = "";
             idType = uType;
-            data = new T[width, height];
+            data = new T[height, width];
         }
         //create a warp image without specifying dtype
         public WarpImage(uint uWidth, uint uHeight)
@@ -117,10 +117,10 @@ namespace warp5
             else
                 throw new InvalidOperationException("Data type not a valid numeric type.");
 
-            data = new T[width,height];      
+            data = new T[height,width];      
         }
         //specify all fields of a complete warp image
-        public WarpImage(uint uWidth, uint uHeight, DTYPE uType,string uOname, string uNotes, Coord uRA, Coord uDEC)
+        public WarpImage(uint uWidth, uint uHeight, DTYPE uType,string uOname, string uNotes, Coord uRA, Coord uDEC )
         {
           
           
@@ -174,8 +174,9 @@ namespace warp5
             notes = uNotes;
             ra = uRA;
             dec = uDEC;
-            data = new T[width, height];
+            data = new T[height,width];
         }
+
         public Coord Ra
         {
             get
@@ -212,6 +213,30 @@ namespace warp5
                 return height;
             }
         }
-
+        //copy data2 into data1, data1 null otherwise 
+        private static void copyData(ref T[,] data1, T[,] data2, uint w, uint h)
+        {
+            uint i, j;
+            if(w==0 || h==0)
+            {
+                data1 = null;
+            }
+            for (i = 0; i < h; i++)
+                for (j = 0; j < w; j++)
+                    data1[i, j] = data2[i, j];
+                
+        }
+        public WarpImage( WarpImage<T> uImage)
+        {
+            idType = uImage.idType;
+            ra = uImage.ra;
+            dec = uImage.dec;
+            oName = uImage.oName;
+            notes = uImage.notes;
+            width = uImage.width;
+            height = uImage.height;
+            data = new T[height, width];
+            copyData(ref data, uImage.data,width,height);
+        }
     }
 }
