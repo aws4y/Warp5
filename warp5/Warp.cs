@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*****************************************************************
+ * Author: Ron Smith
+ *(C) 2019 
+ * All software is distributed under the LGPL as is with no warranty.
+ * ****************************************************************/
+
+using System;
 
 namespace warp5
 {
