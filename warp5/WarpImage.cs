@@ -8,7 +8,7 @@ namespace warp5
     {
         private Coord ra;       // object RA (Right Ascention)
         private Coord dec;      //object Dec (declination)
-        private DTYPE idType;
+        private DTYPE idType;   //FITS data type field of class
         private uint width;     //image width
         private uint height;    //image height
         private string oName;   //object name
@@ -120,7 +120,7 @@ namespace warp5
             data = new T[height,width];      
         }
         //specify all fields of a complete warp image
-        public WarpImage(uint uWidth, uint uHeight, DTYPE uType,string uOname, string uNotes, Coord uRA, Coord uDEC )
+        public WarpImage(uint uWidth, uint uHeight, DTYPE uType,string uOname, string uNotes, Coord uRA, Coord uDEC, T[,] uData)
         {
           
           
@@ -174,9 +174,65 @@ namespace warp5
             notes = uNotes;
             ra = uRA;
             dec = uDEC;
-            data = new T[height,width];
-        }
+            copyData(ref data, uData,width,height);
+           }
+        //create a new warp image with an empty data field
+        public WarpImage(uint uWidth, uint uHeight, DTYPE uType, string uOname, string uNotes, Coord uRA, Coord uDEC)
+        {
 
+
+            switch (uType)
+            {
+                case DTYPE.DOUBLE:
+                    {
+                        if (typeof(T) != typeof(double))
+                        {
+                            throw new InvalidOperationException("Invlid Image Data type, expected " + typeof(double) + " got " + typeof(T));
+                        }
+                        break;
+                    }
+                case DTYPE.FLOAT:
+                    {
+                        if (typeof(T) != typeof(float))
+                        {
+                            throw new InvalidOperationException("Invlid Image Data type, expected " + typeof(float) + " got " + typeof(T));
+                        }
+                        break;
+                    }
+                case DTYPE.BYTE:
+                    {
+                        if (typeof(T) != typeof(byte))
+                        {
+                            throw new InvalidOperationException("Invlid Image Data type, expected " + typeof(byte) + " got " + typeof(T));
+                        }
+                        break;
+                    }
+                case DTYPE.INT16:
+                    {
+                        if (typeof(T) != typeof(ushort))
+                        {
+                            throw new InvalidOperationException("Invlid Image Data type, expected " + typeof(ushort) + " got " + typeof(T));
+                        }
+                        break;
+                    }
+                case DTYPE.INT32:
+                    {
+                        if (typeof(T) != typeof(uint))
+                        {
+                            throw new InvalidOperationException("Invlid Image Data type, expected " + typeof(uint) + " got " + typeof(T));
+                        }
+                        break;
+                    }
+            }
+            width = uWidth;
+            height = uHeight;
+            idType = uType;
+            oName = uOname;
+            notes = uNotes;
+            ra = uRA;
+            dec = uDEC;
+            data = new T[height, width];
+        }
         public Coord Ra
         {
             get
@@ -213,7 +269,29 @@ namespace warp5
                 return height;
             }
         }
-        //copy data2 into data1, data1 null otherwise 
+        public string OName
+        {
+            get
+            {
+                return oName;
+            }
+            set
+            {
+                oName = value;
+            }
+        }
+        public string Notes
+        {
+            get
+            {
+                return notes;
+            }
+            set
+            {
+                notes = value;
+            }
+        }
+        //copy data2 into data1, data1 null otherwise this is a private helper function for creating a new image from a previous one
         private static void copyData(ref T[,] data1, T[,] data2, uint w, uint h)
         {
             uint i, j;
