@@ -8,7 +8,7 @@ using System;
 
 namespace warp5
 {
-    enum DTYPE
+    public enum DTYPE
     { 
         DOUBLE=-64,
         FLOAT=-32,
@@ -19,7 +19,7 @@ namespace warp5
     }
     public class Warp
     {
-        WarpImage<ushort>[] stack;
+        WarpImage16[] stack;
 
     }
 }

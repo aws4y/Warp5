@@ -10,7 +10,7 @@ using System.Text;
 
 namespace warp5
 {
-    class Coord
+    public class Coord
     {
         private int hr;
         private int deg;

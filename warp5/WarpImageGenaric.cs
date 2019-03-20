@@ -11,11 +11,11 @@ using System.Text;
 namespace warp5
 {
     /// <summary>
-    ///The WarpImage class uses C# genarics to implement an abstract image class for manipulation purposes 
-    ///THe class will  allow for basic image arithmetic on images of the same size 
+    ///The WarpImageGenaric class uses C# genarics to implement an abstract image class 
+    ///Arithmetic is not possible for WarpImageGenaric types
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    class WarpImage<T>
+    abstract public class WarpImageGenaric<T>
     {
         private Coord ra;       // object RA (Right Ascention)
         private Coord dec;      //object Dec (declination)
@@ -27,7 +27,7 @@ namespace warp5
         private T[,] data;      //image data
         
         //create an empty warp image 
-        public WarpImage()
+        public WarpImageGenaric()
         {
             ra = new Coord();
             dec = new Coord();
@@ -51,7 +51,7 @@ namespace warp5
             data = null;
         }
         //create a WarpImage of type DTYPE 
-        public WarpImage(uint uWidth, uint uHeight, DTYPE uType)
+        public WarpImageGenaric(uint uWidth, uint uHeight, DTYPE uType)
         {
            
             switch(uType)
@@ -107,7 +107,7 @@ namespace warp5
             data = new T[height, width];
         }
         //create a warp image without specifying dtype
-        public WarpImage(uint uWidth, uint uHeight)
+        public WarpImageGenaric(uint uWidth, uint uHeight)
         {
             ra = new Coord();
             dec = new Coord();
@@ -131,7 +131,7 @@ namespace warp5
             data = new T[height,width];      
         }
         //specify all fields of a complete warp image
-        public WarpImage(uint uWidth, uint uHeight, DTYPE uType,string uOname, string uNotes, Coord uRA, Coord uDEC, T[,] uData)
+        public WarpImageGenaric(uint uWidth, uint uHeight, DTYPE uType,string uOname, string uNotes, Coord uRA, Coord uDEC, T[,] uData)
         {
           
           
@@ -188,7 +188,7 @@ namespace warp5
             copyData(ref data, uData,width,height);
            }
         //create a new warp image with an empty data field
-        public WarpImage(uint uWidth, uint uHeight, DTYPE uType, string uOname, string uNotes, Coord uRA, Coord uDEC)
+        public WarpImageGenaric(uint uWidth, uint uHeight, DTYPE uType, string uOname, string uNotes, Coord uRA, Coord uDEC)
         {
 
 
@@ -315,20 +315,20 @@ namespace warp5
                     data1[i, j] = data2[i, j];
                 
         }
-        public WarpImage( WarpImage<T> uImage)
+        public WarpImageGenaric( WarpImageGenaric<T> uImage)
         {
-            idType = uImage.idType;
-            ra = uImage.ra;
-            dec = uImage.dec;
-            oName = uImage.oName;
-            notes = uImage.notes;
-            width = uImage.width;
-            height = uImage.height;
-            data = new T[height, width];
-            copyData(ref data, uImage.data,width,height);
+          idType = uImage.idType;
+          ra = uImage.ra;
+          dec = uImage.dec;
+          oName = uImage.oName;
+          notes = uImage.notes;
+          width = uImage.width;
+          height = uImage.height;
+          data = new T[height, width];
+          copyData(ref data, uImage.data,width,height);
         }
         //create empty image omitting DTYPE
-        public WarpImage(uint uWidth, uint uHeight, string uOname, string uNotes, Coord uRA, Coord uDEC)
+        public WarpImageGenaric(uint uWidth, uint uHeight, string uOname, string uNotes, Coord uRA, Coord uDEC)
         { 
             if (typeof(T) == typeof(double))
                 idType = DTYPE.DOUBLE;
@@ -351,7 +351,7 @@ namespace warp5
             data = new T[height, width];      
         }
         //create warp image omitting DTYPE
-        public WarpImage(uint uWidth, uint uHeight, string uOname, string uNotes, Coord uRA, Coord uDEC, T[,] uData)
+        public WarpImageGenaric(uint uWidth, uint uHeight, string uOname, string uNotes, Coord uRA, Coord uDEC, T[,] uData)
         {
             if (typeof(T) == typeof(double))
                 idType = DTYPE.DOUBLE;
@@ -373,5 +373,11 @@ namespace warp5
             dec = uDEC;
             copyData(ref data, uData, width, height);
         }
+        public T getData(uint i, uint j)
+        {
+            return (T)data[i, j];
+        }
+       
     }
+    
 }
