@@ -16,3 +16,11 @@ C:\Users\aws4y\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.Assemb
 C:\Users\aws4y\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.AssemblyInfo.cs
 C:\Users\aws4y\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.dll
 C:\Users\aws4y\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.pdb
+C:\Users\Aaron\Documents\GitHub\Warp5\warp5\bin\Debug\netcoreapp2.2\warp5.deps.json
+C:\Users\Aaron\Documents\GitHub\Warp5\warp5\bin\Debug\netcoreapp2.2\warp5.dll
+C:\Users\Aaron\Documents\GitHub\Warp5\warp5\bin\Debug\netcoreapp2.2\warp5.pdb
+C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.csproj.CoreCompileInputs.cache
+C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.AssemblyInfoInputs.cache
+C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.AssemblyInfo.cs
+C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.dll
+C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.pdb
