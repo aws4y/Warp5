@@ -168,5 +168,23 @@ namespace warp5
                 }
             return new WarpImageF32(nWidth, nHeight, DTYPE.INT16, a.OName, a.Notes, a.Ra, a.Dec, nData);
         }
+        public static WarpImageF32 operator /(WarpImageF32 a, WarpImageF32 b)
+        {
+            float[,] nData;
+            if (a.Height != b.Height || a.Width != b.Width)
+                throw new ArithmeticException("Error: Dimensions do not match");
+            else
+            {
+                nData = new float[a.Height, a.Width];
+                for (uint i=0; i<a.Height;i++)
+                {
+                    for(uint j=0; j<a.Width;j++)
+                    {
+                        nData[i, j] = a.GetData(i, j) / b.GetData(i, j);
+                    }
+                }
+            }
+            return new WarpImageF32(a.Width, a.Height, DTYPE.FLOAT,a.OName,a.Notes,a.Ra,a.Dec,nData);
+        }
     }
 }
