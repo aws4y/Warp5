@@ -4,33 +4,30 @@ using System.Text;
 
 namespace warp5
 {
-    /// <summary>
-    /// WarpImage16 is the class for 16 bit warp images and there arithmetic it extends WarpImageGenaric<>
-    /// </summary>
-    public class WarpImage16 : WarpImageGeneric<ushort>
+    class WarpImageF64:WarpImageGeneric<double>
     {
-        public WarpImage16() : base()
+        public WarpImageF64() : base()
         { }
-        public WarpImage16(uint uWidth, uint uHeight, DTYPE uType) : base(uWidth, uHeight, uType)
+        public WarpImageF64(uint uWidth, uint uHeight, DTYPE uType) : base(uWidth, uHeight, uType)
         { }
-        public WarpImage16(uint uWidth, uint uHeight) : base(uWidth, uHeight)
+        public WarpImageF64(uint uWidth, uint uHeight) : base(uWidth, uHeight)
         { }
-        public WarpImage16(uint uWidth, uint uHeight, DTYPE uType, string uOname, string uNotes, Coord uRA, Coord uDEC, ushort[,] uData): 
-            base(uWidth,uHeight,uType,uOname,uNotes,uRA,uDEC,uData)
+        public WarpImageF64(uint uWidth, uint uHeight, DTYPE uType, string uOname, string uNotes, Coord uRA, Coord uDEC, double[,] uData) :
+            base(uWidth, uHeight, uType, uOname, uNotes, uRA, uDEC, uData)
         { }
-        public WarpImage16(uint uWidth, uint uHeight, DTYPE uType, string uOname, string uNotes, Coord uRA, Coord uDEC) :
+        public WarpImageF64(uint uWidth, uint uHeight, DTYPE uType, string uOname, string uNotes, Coord uRA, Coord uDEC) :
          base(uWidth, uHeight, uType, uOname, uNotes, uRA, uDEC)
-   
+
         { }
-        public WarpImage16(WarpImage16 uImage) : base(uImage)
+        public WarpImageF64(WarpImageF64 uImage) : base(uImage)
         { }
-        public static WarpImage16 operator +(WarpImage16 a, WarpImage16 b)
+        public static WarpImageF64 operator +(WarpImageF64 a, WarpImageF64 b)
         {
             uint nWidth;
             uint nHeight;
             uint lWidth;
             uint lHeight;
-            ushort[,] nData;
+            double[,] nData;
             bool aMajor = true;
             if (a.Width >= b.Width && a.Height >= b.Height)
             {
@@ -52,34 +49,34 @@ namespace warp5
             {
                 throw new ArithmeticException("Error: Dim Missmatch");
             }
-            nData = new ushort[nWidth, nHeight];
+            nData = new double[nWidth, nHeight];
             for (uint i = 0; i < nHeight; i++)
                 for (uint j = 0; j < nWidth; j++)
                 {
                     if (aMajor)
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] =(ushort)( a.GetData(i, j) + b.GetData(i, j));
+                            nData[i, j] = (double)(a.GetData(i, j) + b.GetData(i, j));
                         else
                             nData[i, j] = a.GetData(i, j);
                     }
                     else
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] = (ushort)(a.GetData(i, j) + b.GetData(i, j));
+                            nData[i, j] = (double)(a.GetData(i, j) + b.GetData(i, j));
                         else
                             nData[i, j] = b.GetData(i, j);
                     }
                 }
-            return new WarpImage16(nWidth, nHeight, DTYPE.INT16, a.OName, a.Notes,a.Ra,a.Dec, nData);
+            return new WarpImageF64(nWidth, nHeight, DTYPE.INT16, a.OName, a.Notes, a.Ra, a.Dec, nData);
         }
-        public static WarpImage16 operator -(WarpImage16 a, WarpImage16 b)
+        public static WarpImageF64 operator -(WarpImageF64 a, WarpImageF64 b)
         {
             uint nWidth;
             uint nHeight;
             uint lWidth;
             uint lHeight;
-            ushort[,] nData;
+            double[,] nData;
             bool aMajor = true;
             if (a.Width >= b.Width && a.Height >= b.Height)
             {
@@ -101,34 +98,34 @@ namespace warp5
             {
                 throw new ArithmeticException("Error: Dim Missmatch");
             }
-            nData = new ushort[nWidth, nHeight];
+            nData = new double[nWidth, nHeight];
             for (uint i = 0; i < nHeight; i++)
                 for (uint j = 0; j < nWidth; j++)
                 {
                     if (aMajor)
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] = (ushort)(a.GetData(i, j) - b.GetData(i, j));
+                            nData[i, j] = (double)(a.GetData(i, j) - b.GetData(i, j));
                         else
                             nData[i, j] = a.GetData(i, j);
                     }
                     else
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] = (ushort)(a.GetData(i, j) - b.GetData(i, j));
+                            nData[i, j] = (double)(a.GetData(i, j) - b.GetData(i, j));
                         else
                             nData[i, j] = b.GetData(i, j);
                     }
                 }
-            return new WarpImage16(nWidth, nHeight, DTYPE.INT16, a.OName, a.Notes, a.Ra, a.Dec, nData);
+            return new WarpImageF64(nWidth, nHeight, DTYPE.INT16, a.OName, a.Notes, a.Ra, a.Dec, nData);
         }
-        public static WarpImage16 operator *(WarpImage16 a, WarpImage16 b)
+        public static WarpImageF64 operator *(WarpImageF64 a, WarpImageF64 b)
         {
             uint nWidth;
             uint nHeight;
             uint lWidth;
             uint lHeight;
-            ushort[,] nData;
+            double[,] nData;
             bool aMajor = true;
             if (a.Width >= b.Width && a.Height >= b.Height)
             {
@@ -150,27 +147,44 @@ namespace warp5
             {
                 throw new ArithmeticException("Error: Dim Missmatch");
             }
-            nData = new ushort[nWidth, nHeight];
+            nData = new double[nWidth, nHeight];
             for (uint i = 0; i < nHeight; i++)
                 for (uint j = 0; j < nWidth; j++)
                 {
                     if (aMajor)
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] = (ushort)(a.GetData(i, j) * b.GetData(i, j));
+                            nData[i, j] = (double)(a.GetData(i, j) * b.GetData(i, j));
                         else
                             nData[i, j] = a.GetData(i, j);
                     }
                     else
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] = (ushort)(a.GetData(i, j) * b.GetData(i, j));
+                            nData[i, j] = (double)(a.GetData(i, j) * b.GetData(i, j));
                         else
                             nData[i, j] = b.GetData(i, j);
                     }
                 }
-            return new WarpImage16(nWidth, nHeight, DTYPE.INT16, a.OName, a.Notes, a.Ra, a.Dec, nData);
+            return new WarpImageF64(nWidth, nHeight, DTYPE.INT16, a.OName, a.Notes, a.Ra, a.Dec, nData);
         }
-       
+        public static WarpImageF64 operator /(WarpImageF64 a, WarpImageF64 b)
+        {
+            double[,] nData;
+            if (a.Height != b.Height || a.Width != b.Width)
+                throw new ArithmeticException("Error: Dimensions do not match");
+            else
+            {
+                nData = new double[a.Height, a.Width];
+                for (uint i = 0; i < a.Height; i++)
+                {
+                    for (uint j = 0; j < a.Width; j++)
+                    {
+                        nData[i, j] = a.GetData(i, j) / b.GetData(i, j);
+                    }
+                }
+            }
+            return new WarpImageF64(a.Width, a.Height, DTYPE.FLOAT, a.OName, a.Notes, a.Ra, a.Dec, nData);
+        }
     }
 }
