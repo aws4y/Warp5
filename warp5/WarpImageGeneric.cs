@@ -11,11 +11,11 @@ using System.Text;
 namespace warp5
 {
     /// <summary>
-    ///The WarpImageGenaric class uses C# genarics to implement an abstract image class 
-    ///Arithmetic is not possible for WarpImageGenaric types
+    ///The WarpImagegeneric class uses C# generics to implement an abstract image class 
+    ///Arithmetic is not possible for WarpImagegeneric types
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    abstract public class WarpImageGenaric<T>
+    abstract public class WarpImageGeneric<T>
     {
         private Coord ra;       // object RA (Right Ascention)
         private Coord dec;      //object Dec (declination)
@@ -27,7 +27,7 @@ namespace warp5
         private T[,] data;      //image data
         
         //create an empty warp image 
-        public WarpImageGenaric()
+        public WarpImageGeneric()
         {
             ra = new Coord();
             dec = new Coord();
@@ -51,7 +51,7 @@ namespace warp5
             data = null;
         }
         //create a WarpImage of type DTYPE 
-        public WarpImageGenaric(uint uWidth, uint uHeight, DTYPE uType)
+        public WarpImageGeneric(uint uWidth, uint uHeight, DTYPE uType)
         {
            
             switch(uType)
@@ -107,7 +107,7 @@ namespace warp5
             data = new T[height, width];
         }
         //create a warp image without specifying dtype
-        public WarpImageGenaric(uint uWidth, uint uHeight)
+        public WarpImageGeneric(uint uWidth, uint uHeight)
         {
             ra = new Coord();
             dec = new Coord();
@@ -131,7 +131,7 @@ namespace warp5
             data = new T[height,width];      
         }
         //specify all fields of a complete warp image
-        public WarpImageGenaric(uint uWidth, uint uHeight, DTYPE uType,string uOname, string uNotes, Coord uRA, Coord uDEC, T[,] uData)
+        public WarpImageGeneric(uint uWidth, uint uHeight, DTYPE uType,string uOname, string uNotes, Coord uRA, Coord uDEC, T[,] uData)
         {
           
           
@@ -185,10 +185,10 @@ namespace warp5
             notes = uNotes;
             ra = uRA;
             dec = uDEC;
-            copyData(ref data, uData,width,height);
+            CopyData(ref data, uData,width,height);
            }
         //create a new warp image with an empty data field
-        public WarpImageGenaric(uint uWidth, uint uHeight, DTYPE uType, string uOname, string uNotes, Coord uRA, Coord uDEC)
+        public WarpImageGeneric(uint uWidth, uint uHeight, DTYPE uType, string uOname, string uNotes, Coord uRA, Coord uDEC)
         {
 
 
@@ -303,7 +303,7 @@ namespace warp5
             }
         }
         //copy data2 into data1, data1 null otherwise this is a private helper function for creating a new image from a previous one
-        private static void copyData(ref T[,] data1, T[,] data2, uint w, uint h)
+        private static void CopyData(ref T[,] data1, T[,] data2, uint w, uint h)
         {
             uint i, j;
             if(w==0 || h==0)
@@ -315,7 +315,7 @@ namespace warp5
                     data1[i, j] = data2[i, j];
                 
         }
-        public WarpImageGenaric( WarpImageGenaric<T> uImage)
+        public WarpImageGeneric( WarpImageGeneric<T> uImage)
         {
           idType = uImage.idType;
           ra = uImage.ra;
@@ -325,10 +325,10 @@ namespace warp5
           width = uImage.width;
           height = uImage.height;
           data = new T[height, width];
-          copyData(ref data, uImage.data,width,height);
+          CopyData(ref data, uImage.data,width,height);
         }
        
-        public T getData(uint i, uint j)
+        public T GetData(uint i, uint j)
         {
             return (T)data[i, j];
         }

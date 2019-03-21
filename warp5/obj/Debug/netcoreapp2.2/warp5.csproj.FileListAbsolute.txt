@@ -24,3 +24,4 @@ C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.Assemb
 C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.AssemblyInfo.cs
 C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.dll
 C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.pdb
+C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.csprojAssemblyReference.cache
