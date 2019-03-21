@@ -4,7 +4,7 @@ using System.Text;
 
 namespace warp5
 {
-    class WarpImageF64:WarpImageGeneric<double>
+   public class WarpImageF64:WarpImageGeneric<double>
     {
         public WarpImageF64() : base()
         { }

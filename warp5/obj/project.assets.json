@@ -686,30 +686,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aaron\\.nuget\\packages\\": {},
+    "C:\\Users\\aws4y\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aaron\\Documents\\GitHub\\Warp5\\warp5\\warp5.csproj",
+      "projectUniqueName": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp5\\warp5\\warp5.csproj",
       "projectName": "warp5",
-      "projectPath": "C:\\Users\\Aaron\\Documents\\GitHub\\Warp5\\warp5\\warp5.csproj",
-      "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aaron\\Documents\\GitHub\\Warp5\\warp5\\obj\\",
+      "projectPath": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp5\\warp5\\warp5.csproj",
+      "packagesPath": "C:\\Users\\aws4y\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp5\\warp5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aws4y\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
