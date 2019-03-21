@@ -7,7 +7,7 @@ namespace warp5
     /// <summary>
     /// WarpImage16 is the class for 16 bit warp images and there arithmetic it extends WarpImageGenaric<>
     /// </summary>
-    public class WarpImage16 : WarpImageGenaric<ushort>
+    public class WarpImage16 : WarpImageGeneric<ushort>
     {
         public WarpImage16() : base()
         { }
@@ -59,16 +59,16 @@ namespace warp5
                     if (aMajor)
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] =(ushort)( a.getData(i, j) + b.getData(i, j));
+                            nData[i, j] =(ushort)( a.GetData(i, j) + b.GetData(i, j));
                         else
-                            nData[i, j] = a.getData(i, j);
+                            nData[i, j] = a.GetData(i, j);
                     }
                     else
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] = (ushort)(a.getData(i, j) + b.getData(i, j));
+                            nData[i, j] = (ushort)(a.GetData(i, j) + b.GetData(i, j));
                         else
-                            nData[i, j] = b.getData(i, j);
+                            nData[i, j] = b.GetData(i, j);
                     }
                 }
             return new WarpImage16(nWidth, nHeight, DTYPE.INT16, a.OName, a.Notes,a.Ra,a.Dec, nData);
@@ -108,16 +108,16 @@ namespace warp5
                     if (aMajor)
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] = (ushort)(a.getData(i, j) - b.getData(i, j));
+                            nData[i, j] = (ushort)(a.GetData(i, j) - b.GetData(i, j));
                         else
-                            nData[i, j] = a.getData(i, j);
+                            nData[i, j] = a.GetData(i, j);
                     }
                     else
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] = (ushort)(a.getData(i, j) - b.getData(i, j));
+                            nData[i, j] = (ushort)(a.GetData(i, j) - b.GetData(i, j));
                         else
-                            nData[i, j] = b.getData(i, j);
+                            nData[i, j] = b.GetData(i, j);
                     }
                 }
             return new WarpImage16(nWidth, nHeight, DTYPE.INT16, a.OName, a.Notes, a.Ra, a.Dec, nData);
@@ -157,16 +157,16 @@ namespace warp5
                     if (aMajor)
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] = (ushort)(a.getData(i, j) * b.getData(i, j));
+                            nData[i, j] = (ushort)(a.GetData(i, j) * b.GetData(i, j));
                         else
-                            nData[i, j] = a.getData(i, j);
+                            nData[i, j] = a.GetData(i, j);
                     }
                     else
                     {
                         if (i < lHeight && j < lWidth)
-                            nData[i, j] = (ushort)(a.getData(i, j) * b.getData(i, j));
+                            nData[i, j] = (ushort)(a.GetData(i, j) * b.GetData(i, j));
                         else
-                            nData[i, j] = b.getData(i, j);
+                            nData[i, j] = b.GetData(i, j);
                     }
                 }
             return new WarpImage16(nWidth, nHeight, DTYPE.INT16, a.OName, a.Notes, a.Ra, a.Dec, nData);
