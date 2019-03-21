@@ -1,10 +1,16 @@
-﻿using System;
+﻿/*****************************************************************
+ * Author: Ron Smith
+ *(C) 2019 
+ * All software is distributed under the LGPL as is with no warranty.
+ * ****************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace warp5
 {
-    class Coord
+    public class Coord
     {
         private int hr;
         private int deg;

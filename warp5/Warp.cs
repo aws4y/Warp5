@@ -1,8 +1,14 @@
-﻿using System;
+﻿/*****************************************************************
+ * Author: Ron Smith
+ *(C) 2019 
+ * All software is distributed under the LGPL as is with no warranty.
+ * ****************************************************************/
+
+using System;
 
 namespace warp5
 {
-    enum DTYPE
+    public enum DTYPE
     { 
         DOUBLE=-64,
         FLOAT=-32,
@@ -13,7 +19,7 @@ namespace warp5
     }
     public class Warp
     {
-        WarpImage<ushort>[] stack;
+        WarpImage16[] stack;
 
     }
 }
