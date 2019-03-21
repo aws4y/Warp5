@@ -327,52 +327,7 @@ namespace warp5
           data = new T[height, width];
           copyData(ref data, uImage.data,width,height);
         }
-        //create empty image omitting DTYPE
-        public WarpImageGenaric(uint uWidth, uint uHeight, string uOname, string uNotes, Coord uRA, Coord uDEC)
-        { 
-            if (typeof(T) == typeof(double))
-                idType = DTYPE.DOUBLE;
-            else if (typeof(T) == typeof(float))
-                idType = DTYPE.FLOAT;
-            else if (typeof(T) == typeof(byte))
-                idType = DTYPE.BYTE;
-            else if (typeof(T) == typeof(ushort))
-                idType = DTYPE.INT16;
-            else if (typeof(T) == typeof(uint))
-                idType = DTYPE.INT32;
-            else
-                throw new InvalidOperationException("Data type not a valid numeric type.");
-            width = uWidth;
-            height = uHeight;
-            oName = uOname;
-            notes = uNotes;
-            ra = uRA;
-            dec = uDEC;
-            data = new T[height, width];      
-        }
-        //create warp image omitting DTYPE
-        public WarpImageGenaric(uint uWidth, uint uHeight, string uOname, string uNotes, Coord uRA, Coord uDEC, T[,] uData)
-        {
-            if (typeof(T) == typeof(double))
-                idType = DTYPE.DOUBLE;
-            else if (typeof(T) == typeof(float))
-                idType = DTYPE.FLOAT;
-            else if (typeof(T) == typeof(byte))
-                idType = DTYPE.BYTE;
-            else if (typeof(T) == typeof(ushort))
-                idType = DTYPE.INT16;
-            else if (typeof(T) == typeof(uint))
-                idType = DTYPE.INT32;
-            else
-                throw new InvalidOperationException("Data type not a valid numeric type.");
-            width = uWidth;
-            height = uHeight;
-            oName = uOname;
-            notes = uNotes;
-            ra = uRA;
-            dec = uDEC;
-            copyData(ref data, uData, width, height);
-        }
+       
         public T getData(uint i, uint j)
         {
             return (T)data[i, j];

@@ -5,7 +5,7 @@ using System.Text;
 namespace warp5
 {
     /// <summary>
-    /// WarpImage16 is the class for 16 bit warp images it extends WarpImageGenaric<>
+    /// WarpImage16 is the class for 16 bit warp images and there arithmetic it extends WarpImageGenaric<>
     /// </summary>
     public class WarpImage16 : WarpImageGenaric<ushort>
     {
@@ -21,6 +21,8 @@ namespace warp5
         public WarpImage16(uint uWidth, uint uHeight, DTYPE uType, string uOname, string uNotes, Coord uRA, Coord uDEC) :
          base(uWidth, uHeight, uType, uOname, uNotes, uRA, uDEC)
    
+        { }
+        public WarpImage16(WarpImage16 uImage) : base(uImage)
         { }
         public static WarpImage16 operator +(WarpImage16 a, WarpImage16 b)
         {
