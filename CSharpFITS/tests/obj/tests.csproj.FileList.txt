@@ -1,0 +1,11 @@
+bin\Debug\tests.exe
+bin\Debug\tests.pdb
+bin\Debug\CSharpFITS.dll
+bin\Debug\CSharpFITS.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\tests.exe
+obj\Debug\tests.pdb
+bin\Release\tests.exe
+bin\Release\CSharpFITS.dll
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\tests.exe

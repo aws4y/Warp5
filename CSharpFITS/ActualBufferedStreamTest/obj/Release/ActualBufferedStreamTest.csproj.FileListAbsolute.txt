@@ -1,0 +1,11 @@
+C:\Users\Aaron\Downloads\CSharpFITS\ActualBufferedStreamTest\obj\Release\ActualBufferedStreamTest.csprojAssemblyReference.cache
+C:\Users\Aaron\Downloads\CSharpFITS\ActualBufferedStreamTest\obj\Release\ActualBufferedStreamTest.csproj.CoreCompileInputs.cache
+C:\Users\Aaron\Downloads\CSharpFITS\ActualBufferedStreamTest\obj\Release\ActualBufferedStreamTest.exe
+C:\Users\Aaron\Downloads\CSharpFITS\ActualBufferedStreamTest\bin\Release\ActualBufferedStreamTest.exe.config
+C:\Users\Aaron\Downloads\CSharpFITS\ActualBufferedStreamTest\bin\Release\ActualBufferedStreamTest.exe
+C:\Users\Aaron\Downloads\CSharpFITS\ActualBufferedStreamTest\bin\Release\CSharpFITS.dll
+C:\Users\Aaron\Downloads\CSharpFITS\ActualBufferedStreamTest\bin\Release\nunit.framework.dll
+C:\Users\Aaron\Downloads\CSharpFITS\ActualBufferedStreamTest\bin\Release\CSharpFITS.pdb
+C:\Users\Aaron\Downloads\CSharpFITS\ActualBufferedStreamTest\bin\Release\nunit.framework.pdb
+C:\Users\Aaron\Downloads\CSharpFITS\ActualBufferedStreamTest\bin\Release\nunit.framework.xml
+C:\Users\Aaron\Downloads\CSharpFITS\ActualBufferedStreamTest\obj\Release\ActualBufferedStreamTest.csproj.CopyComplete

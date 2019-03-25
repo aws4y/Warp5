@@ -1,0 +1,228 @@
+entity: AsciiTable loc: ./nom/tam/fits/AsciiTable.cs
+dependents:
+./nom/tam/fits/AsciiTableHDU.cs
+./nom/tam/fits/test/AsciiTableTester.cs
+
+entity: AsciiTableHDU loc: ./nom/tam/fits/AsciiTableHDU.cs
+dependents:
+./nom/tam/fits/FitsFactory.cs
+./nom/tam/fits/test/AsciiTableTester.cs
+
+entity: BadHeaderException loc: ./nom/tam/fits/BadHeaderException.cs
+dependents:
+
+entity: BasicHDU loc: ./nom/tam/fits/BasicHDU.cs
+dependents:
+./nom/tam/fits/Fits.cs
+./nom/tam/fits/FitsFactory.cs
+./nom/tam/fits/test/BinaryTableTester.cs
+./nom/tam/fits/test/FitsCopy.cs
+./nom/tam/fits/test/FitsReader.cs
+./nom/tam/fits/test/HierarchTester.cs
+./nom/tam/fits/test/RandomGroupsTester.cs
+
+entity: BinaryTable loc: ./nom/tam/fits/BinaryTable.cs
+dependents:
+./nom/tam/fits/BinaryTableHDU.cs
+./nom/tam/fits/test/BinaryTableTester.cs
+
+entity: BinaryTableHDU loc: ./nom/tam/fits/BinaryTableHDU.cs
+dependents:
+./nom/tam/fits/FitsFactory.cs
+./nom/tam/fits/test/BinaryTableTester.cs
+
+entity: Data loc: ./nom/tam/fits/Data.cs
+dependents:
+./nom/tam/fits/AsciiTable.cs
+./nom/tam/fits/AsciiTableHDU.cs
+./nom/tam/fits/BasicHDU.cs
+./nom/tam/fits/BinaryTable.cs
+./nom/tam/fits/BinaryTableHDU.cs
+./nom/tam/fits/Fits.cs
+./nom/tam/fits/FitsFactory.cs
+./nom/tam/fits/Header.cs
+./nom/tam/fits/ImageData.cs
+./nom/tam/fits/ImageHDU.cs
+./nom/tam/fits/RandomGroupsData.cs
+./nom/tam/fits/RandomGroupsHDU.cs
+./nom/tam/fits/TableHDU.cs
+./nom/tam/fits/test/BinaryTableTester.cs
+./nom/tam/fits/UndefinedData.cs
+./nom/tam/fits/UndefinedHDU.cs
+
+entity: Fits loc: ./nom/tam/fits/Fits.cs
+dependents:
+./nom/tam/fits/test/AsciiTableTester.cs
+./nom/tam/fits/test/BigImage.cs
+./nom/tam/fits/test/BinaryTableTester.cs
+./nom/tam/fits/test/FitsCopy.cs
+./nom/tam/fits/test/FitsReader.cs
+./nom/tam/fits/test/HeaderTester.cs
+./nom/tam/fits/test/HierarchTester.cs
+./nom/tam/fits/test/ImageTester.cs
+./nom/tam/fits/test/RandomGroupsTester.cs
+./nom/tam/fits/test/TilerTester.cs
+
+entity: FitsDate loc: ./nom/tam/fits/FitsDate.cs
+dependents:
+./nom/tam/fits/test/TestDate.cs
+
+entity: FitsException loc: ./nom/tam/fits/FitsException.cs
+dependents:
+./nom/tam/fits/BasicHDU.cs
+./nom/tam/fits/BinaryTable.cs
+./nom/tam/fits/FitsDate.cs
+./nom/tam/fits/ImageHDU.cs
+./nom/tam/fits/RandomGroupsHDU.cs
+
+entity: FitsFactory loc: ./nom/tam/fits/FitsFactory.cs
+dependents:
+./nom/tam/fits/BasicHDU.cs
+./nom/tam/fits/Fits.cs
+./nom/tam/fits/Header.cs
+./nom/tam/fits/HeaderCard.cs
+./nom/tam/fits/test/BinaryTableTester.cs
+./nom/tam/fits/test/HierarchTester.cs
+
+entity: FitsHeap loc: ./nom/tam/fits/FitsHeap.cs
+dependents:
+./nom/tam/fits/BinaryTable.cs
+
+entity: FitsUtil loc: ./nom/tam/fits/FitsUtil.cs
+dependents:
+./nom/tam/fits/AsciiTable.cs
+./nom/tam/fits/BinaryTable.cs
+./nom/tam/fits/Data.cs
+./nom/tam/fits/Fits.cs
+./nom/tam/fits/FitsHeap.cs
+./nom/tam/fits/Header.cs
+./nom/tam/fits/ImageData.cs
+./nom/tam/fits/RandomGroupsData.cs
+./nom/tam/fits/test/RandomGroupsTester.cs
+./nom/tam/fits/UndefinedData.cs
+
+entity: Header loc: ./nom/tam/fits/Header.cs
+dependents:
+./nom/tam/fits/AsciiTable.cs
+./nom/tam/fits/AsciiTableHDU.cs
+./nom/tam/fits/BasicHDU.cs
+./nom/tam/fits/BinaryTable.cs
+./nom/tam/fits/BinaryTableHDU.cs
+./nom/tam/fits/Data.cs
+./nom/tam/fits/Fits.cs
+./nom/tam/fits/FitsFactory.cs
+./nom/tam/fits/ImageData.cs
+./nom/tam/fits/ImageHDU.cs
+./nom/tam/fits/RandomGroupsData.cs
+./nom/tam/fits/RandomGroupsHDU.cs
+./nom/tam/fits/TableHDU.cs
+./nom/tam/fits/test/AsciiTableTester.cs
+./nom/tam/fits/test/HeaderTester.cs
+./nom/tam/fits/test/HierarchTester.cs
+./nom/tam/fits/test/ImageTester.cs
+./nom/tam/fits/test/LittleTester.cs
+./nom/tam/fits/test/RandomGroupsTester.cs
+./nom/tam/fits/UndefinedData.cs
+./nom/tam/fits/UndefinedHDU.cs
+
+entity: HeaderCard loc: ./nom/tam/fits/HeaderCard.cs
+dependents:
+./nom/tam/fits/BasicHDU.cs
+./nom/tam/fits/Header.cs
+./nom/tam/fits/test/HeaderCardTester.cs
+./nom/tam/fits/test/HeaderTester.cs
+./nom/tam/fits/test/HierarchTester.cs
+
+entity: HeaderCardException loc: ./nom/tam/fits/HeaderCardException.cs
+dependents:
+./nom/tam/fits/AsciiTable.cs
+./nom/tam/fits/AsciiTableHDU.cs
+./nom/tam/fits/BinaryTable.cs
+./nom/tam/fits/Header.cs
+./nom/tam/fits/UndefinedData.cs
+
+entity: ImageData loc: ./nom/tam/fits/ImageData.cs
+dependents:
+
+entity: ArrayDesc loc: ./nom/tam/fits/ImageData.cs
+dependents:
+
+entity: ImageDataTiler loc: ./nom/tam/fits/ImageData.cs
+dependents:
+
+entity: ImageHDU loc: ./nom/tam/fits/ImageHDU.cs
+dependents:
+./nom/tam/fits/FitsFactory.cs
+./nom/tam/fits/test/HeaderTester.cs
+./nom/tam/fits/test/ImageTester.cs
+./nom/tam/fits/test/TilerTester.cs
+
+entity: RandomGroupsData loc: ./nom/tam/fits/RandomGroupsData.cs
+dependents:
+
+entity: RandomGroupsHDU loc: ./nom/tam/fits/RandomGroupsHDU.cs
+dependents:
+./nom/tam/fits/FitsFactory.cs
+
+entity: TableHDU loc: ./nom/tam/fits/TableHDU.cs
+dependents:
+./nom/tam/fits/FitsFactory.cs
+./nom/tam/fits/test/AsciiTableTester.cs
+./nom/tam/fits/test/BinaryTableTester.cs
+
+entity: AsciiTableTester loc: ./nom/tam/fits/test/AsciiTableTester.cs
+dependents:
+
+entity: BigImage loc: ./nom/tam/fits/test/BigImage.cs
+dependents:
+
+entity: BinaryTableTester loc: ./nom/tam/fits/test/BinaryTableTester.cs
+dependents:
+
+entity: FitsCopy loc: ./nom/tam/fits/test/FitsCopy.cs
+dependents:
+
+entity: FitsReader loc: ./nom/tam/fits/test/FitsReader.cs
+dependents:
+
+entity: HeaderCardTester loc: ./nom/tam/fits/test/HeaderCardTester.cs
+dependents:
+
+entity: HeaderTester loc: ./nom/tam/fits/test/HeaderTester.cs
+dependents:
+
+entity: HierarchTester loc: ./nom/tam/fits/test/HierarchTester.cs
+dependents:
+
+entity: ImageTester loc: ./nom/tam/fits/test/ImageTester.cs
+dependents:
+
+entity: LittleTester loc: ./nom/tam/fits/test/LittleTester.cs
+dependents:
+
+entity: RandomGroupsTester loc: ./nom/tam/fits/test/RandomGroupsTester.cs
+dependents:
+
+entity: TestDate loc: ./nom/tam/fits/test/TestDate.cs
+dependents:
+
+entity: TilerTester loc: ./nom/tam/fits/test/TilerTester.cs
+dependents:
+
+entity: TruncatedFileException loc: ./nom/tam/fits/TruncatedFileException.cs
+dependents:
+
+entity: UndefinedData loc: ./nom/tam/fits/UndefinedData.cs
+dependents:
+
+entity: UndefinedHDU loc: ./nom/tam/fits/UndefinedHDU.cs
+dependents:
+./nom/tam/fits/FitsFactory.cs
+
+entity: ImageTiler loc: ./nom/tam/image/ImageTiler.cs
+dependents:
+./nom/tam/fits/ImageData.cs
+./nom/tam/fits/ImageHDU.cs
+./nom/tam/fits/test/ImageTester.cs
+./nom/tam/fits/test/TilerTester.cs
+

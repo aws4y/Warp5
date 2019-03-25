@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpFITS", "CSharpFITS.csproj", "{9BC5F834-BB3A-43D0-A954-E214186BED0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{4EDB1AD4-5876-4CB9-9C06-9973BEA623D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActualBufferedStreamTest", "ActualBufferedStreamTest\ActualBufferedStreamTest.csproj", "{5D22FDC1-D0B8-4978-9555-DC3EAFB2C266}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BC5F834-BB3A-43D0-A954-E214186BED0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC5F834-BB3A-43D0-A954-E214186BED0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC5F834-BB3A-43D0-A954-E214186BED0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC5F834-BB3A-43D0-A954-E214186BED0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EDB1AD4-5876-4CB9-9C06-9973BEA623D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EDB1AD4-5876-4CB9-9C06-9973BEA623D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EDB1AD4-5876-4CB9-9C06-9973BEA623D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EDB1AD4-5876-4CB9-9C06-9973BEA623D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D22FDC1-D0B8-4978-9555-DC3EAFB2C266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D22FDC1-D0B8-4978-9555-DC3EAFB2C266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D22FDC1-D0B8-4978-9555-DC3EAFB2C266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D22FDC1-D0B8-4978-9555-DC3EAFB2C266}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

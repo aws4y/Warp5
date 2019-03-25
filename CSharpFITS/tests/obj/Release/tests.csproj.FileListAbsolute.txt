@@ -1,0 +1,10 @@
+C:\Users\Aaron\Downloads\CSharpFITS\tests\obj\Release\tests.csprojAssemblyReference.cache
+C:\Users\Aaron\Downloads\CSharpFITS\tests\obj\Release\tests.csproj.CoreCompileInputs.cache
+C:\Users\Aaron\Downloads\CSharpFITS\tests\obj\Release\tests.exe
+C:\Users\Aaron\Downloads\CSharpFITS\tests\bin\Release\tests.exe.config
+C:\Users\Aaron\Downloads\CSharpFITS\tests\bin\Release\tests.exe
+C:\Users\Aaron\Downloads\CSharpFITS\tests\bin\Release\CSharpFITS.dll
+C:\Users\Aaron\Downloads\CSharpFITS\tests\bin\Release\nunit.framework.dll
+C:\Users\Aaron\Downloads\CSharpFITS\tests\bin\Release\nunit.framework.pdb
+C:\Users\Aaron\Downloads\CSharpFITS\tests\bin\Release\nunit.framework.xml
+C:\Users\Aaron\Downloads\CSharpFITS\tests\obj\Release\tests.csproj.CopyComplete
