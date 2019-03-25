@@ -1,0 +1,12 @@
+bin\Debug\ActualBufferedStreamTest.exe
+bin\Debug\ActualBufferedStreamTest.pdb
+bin\Debug\CSharpFITS.dll
+bin\Debug\CSharpFITS.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ActualBufferedStreamTest.exe
+obj\Debug\ActualBufferedStreamTest.pdb
+bin\Release\ActualBufferedStreamTest.exe
+bin\Release\CSharpFITS.dll
+bin\Release\CSharpFITS.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\ActualBufferedStreamTest.exe

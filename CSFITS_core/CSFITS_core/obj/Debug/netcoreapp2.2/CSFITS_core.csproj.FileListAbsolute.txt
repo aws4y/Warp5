@@ -1,0 +1,9 @@
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSFITS_core.csprojAssemblyReference.cache
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSFITS_core.csproj.CoreCompileInputs.cache
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSFITS_core.AssemblyInfoInputs.cache
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSFITS_core.AssemblyInfo.cs
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\bin\Debug\netcoreapp2.2\CSFITS_core.deps.json
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\bin\Debug\netcoreapp2.2\CSFITS_core.dll
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\bin\Debug\netcoreapp2.2\CSFITS_core.pdb
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSFITS_core.dll
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSFITS_core.pdb

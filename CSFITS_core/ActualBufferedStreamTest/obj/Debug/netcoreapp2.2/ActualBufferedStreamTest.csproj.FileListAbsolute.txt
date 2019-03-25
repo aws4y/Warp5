@@ -1,0 +1,14 @@
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\obj\Debug\netcoreapp2.2\ActualBufferedStreamTest.csprojAssemblyReference.cache
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\obj\Debug\netcoreapp2.2\ActualBufferedStreamTest.csproj.CoreCompileInputs.cache
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\obj\Debug\netcoreapp2.2\ActualBufferedStreamTest.AssemblyInfoInputs.cache
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\obj\Debug\netcoreapp2.2\ActualBufferedStreamTest.AssemblyInfo.cs
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\bin\Debug\netcoreapp2.2\ActualBufferedStreamTest.deps.json
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\bin\Debug\netcoreapp2.2\ActualBufferedStreamTest.runtimeconfig.json
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\bin\Debug\netcoreapp2.2\ActualBufferedStreamTest.runtimeconfig.dev.json
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\bin\Debug\netcoreapp2.2\ActualBufferedStreamTest.dll
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\obj\Debug\netcoreapp2.2\ActualBufferedStreamTest.csproj.CopyComplete
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\bin\Debug\netcoreapp2.2\ActualBufferedStreamTest.pdb
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\obj\Debug\netcoreapp2.2\ActualBufferedStreamTest.dll
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\obj\Debug\netcoreapp2.2\ActualBufferedStreamTest.pdb
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\bin\Debug\netcoreapp2.2\CSharpFITS.dll
+C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\ActualBufferedStreamTest\bin\Debug\netcoreapp2.2\CSharpFITS.pdb
