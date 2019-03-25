@@ -1,4 +1,0 @@
-C:\Users\Aaron\Downloads\CSharpFITS\bin\Release\CSharpFITS.dll
-C:\Users\Aaron\Downloads\CSharpFITS\obj\Release\CSharpFITS.csprojAssemblyReference.cache
-C:\Users\Aaron\Downloads\CSharpFITS\obj\Release\CSharpFITS.csproj.CoreCompileInputs.cache
-C:\Users\Aaron\Downloads\CSharpFITS\obj\Release\CSharpFITS.dll
