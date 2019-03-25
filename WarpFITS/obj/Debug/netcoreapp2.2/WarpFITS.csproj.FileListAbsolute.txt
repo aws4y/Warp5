@@ -1,0 +1,14 @@
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\bin\Debug\netcoreapp2.2\WarpFITS.deps.json
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\bin\Debug\netcoreapp2.2\WarpFITS.dll
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\bin\Debug\netcoreapp2.2\WarpFITS.pdb
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\bin\Debug\netcoreapp2.2\CSharpFITS.dll
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\bin\Debug\netcoreapp2.2\warp5.dll
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\bin\Debug\netcoreapp2.2\CSharpFITS.pdb
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\bin\Debug\netcoreapp2.2\warp5.pdb
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\obj\Debug\netcoreapp2.2\WarpFITS.csprojAssemblyReference.cache
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\obj\Debug\netcoreapp2.2\WarpFITS.csproj.CoreCompileInputs.cache
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\obj\Debug\netcoreapp2.2\WarpFITS.AssemblyInfoInputs.cache
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\obj\Debug\netcoreapp2.2\WarpFITS.AssemblyInfo.cs
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\obj\Debug\netcoreapp2.2\WarpFITS.csproj.CopyComplete
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\obj\Debug\netcoreapp2.2\WarpFITS.dll
+C:\Users\aws4y\Documents\GitHub\Warp5\WarpFITS\obj\Debug\netcoreapp2.2\WarpFITS.pdb
