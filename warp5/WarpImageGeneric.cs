@@ -24,6 +24,8 @@ namespace warp5
         private uint height;    //image height
         private string oName;   //object name
         private string notes;   //fits notes
+        private string fType;   //file type of the image 
+        private string fName;   //file name for the image
         private T[,] data;      //image data
         
         //create an empty warp image 
@@ -35,6 +37,8 @@ namespace warp5
             height = 0;
             oName = "";
             notes = "";
+            fType = "";
+            fName = ""; 
             if (typeof(T) == typeof(double))
                 idType = DTYPE.DOUBLE;
             else if (typeof(T) == typeof(float))
@@ -332,7 +336,29 @@ namespace warp5
         {
             return (T)data[i, j];
         }
-       
+       public string FName
+        {
+            get
+            {
+                return fName;
+            }
+            set
+            {
+                fName = value;
+            }
+        }
+        public string FType
+        {
+            get
+            {
+                return fType;
+            }
+            set
+            {
+                fType = value;
+            }
+        }
     }
+   
     
 }

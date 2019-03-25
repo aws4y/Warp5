@@ -5,7 +5,7 @@
  * ****************************************************************/
 
 using System;
-
+using System.Collections.Generic;
 namespace warp5
 {
     public enum DTYPE
@@ -17,9 +17,10 @@ namespace warp5
         INT32=32
 
     }
+   
     public class Warp
     {
-        WarpImage16[] stack;
+        List<WarpImage16> stack;
 
     }
 }
