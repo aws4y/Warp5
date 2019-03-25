@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aws4y\\source\\repos\\CSFITS_core\\CSFITS_core\\CSFITS_core.csproj",
-      "projectName": "CSFITS_core",
-      "projectPath": "C:\\Users\\aws4y\\source\\repos\\CSFITS_core\\CSFITS_core\\CSFITS_core.csproj",
+      "projectUniqueName": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp5\\CSFITS_core\\CSFITS_core\\CSharpFITS.csproj",
+      "projectName": "CSharpFITS",
+      "projectPath": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp5\\CSFITS_core\\CSFITS_core\\CSharpFITS.csproj",
       "packagesPath": "C:\\Users\\aws4y\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aws4y\\source\\repos\\CSFITS_core\\CSFITS_core\\obj\\",
+      "outputPath": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp5\\CSFITS_core\\CSFITS_core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
