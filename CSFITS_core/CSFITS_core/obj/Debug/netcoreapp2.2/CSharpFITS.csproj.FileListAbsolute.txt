@@ -1,9 +1,0 @@
-C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\bin\Debug\netcoreapp2.2\CSharpFITS.deps.json
-C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\bin\Debug\netcoreapp2.2\CSharpFITS.dll
-C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\bin\Debug\netcoreapp2.2\CSharpFITS.pdb
-C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSharpFITS.csproj.CoreCompileInputs.cache
-C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSharpFITS.AssemblyInfoInputs.cache
-C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSharpFITS.AssemblyInfo.cs
-C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSharpFITS.dll
-C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSharpFITS.pdb
-C:\Users\aws4y\Documents\GitHub\Warp5\CSFITS_core\CSFITS_core\obj\Debug\netcoreapp2.2\CSharpFITS.csprojAssemblyReference.cache

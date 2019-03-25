@@ -1,6 +1,6 @@
 ﻿using System;
 using warp5;
-using nom.tam.fits
+using nom.tam.fits;
 
 namespace WarpFITS
 {
