@@ -25,3 +25,6 @@ C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.Assemb
 C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.dll
 C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.pdb
 C:\Users\Aaron\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.csprojAssemblyReference.cache
+C:\Users\aws4y\Documents\GitHub\Warp5\warp5\bin\Debug\netcoreapp2.2\CSharpFITS.dll
+C:\Users\aws4y\Documents\GitHub\Warp5\warp5\bin\Debug\netcoreapp2.2\CSharpFITS.pdb
+C:\Users\aws4y\Documents\GitHub\Warp5\warp5\obj\Debug\netcoreapp2.2\warp5.csproj.CopyComplete

@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "CSharpFITS/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/CSharpFITS.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CSharpFITS.dll": {}
+        }
       }
     }
   },
@@ -678,10 +688,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "CSharpFITS/1.0.0": {
+      "type": "project",
+      "path": "../CSharpFITS/CSharpFITS.csproj",
+      "msbuildProject": "../CSharpFITS/CSharpFITS.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "CSharpFITS >= 1.0.0",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
   },
@@ -714,7 +730,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\aws4y\\Documents\\GitHub\\Warp5\\CSharpFITS\\CSharpFITS.csproj": {
+              "projectPath": "C:\\Users\\aws4y\\Documents\\GitHub\\Warp5\\CSharpFITS\\CSharpFITS.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

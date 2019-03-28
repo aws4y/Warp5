@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "warp5/1.0.0": {
+        "dependencies": {
+          "CSharpFITS": "1.0.0"
+        },
         "runtime": {
           "warp5.dll": {}
+        }
+      },
+      "CSharpFITS/1.0.0": {
+        "runtime": {
+          "CSharpFITS.dll": {}
         }
       }
     }
   },
   "libraries": {
     "warp5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CSharpFITS/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
